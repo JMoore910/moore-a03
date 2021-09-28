@@ -11,37 +11,43 @@ import java.util.Scanner;
  */
 
 public class Solution24 {
-    //stringCompare
+
+
+
     //Create a function that compares two strings to see if they are anagrams
     //Create method: stringCompare(String A, String B)
     public static boolean stringCompare(String A, String B){
         boolean anagram = true;
         /*ADDITION TO PSEUDOCODE: Due to the fact for-each loops cannot be applied to Strings,
         two arrays of chars must be created and copied from the input strings*/
-        if (A.length()==B.length()){
+        if (A.length()==B.length()) {
             char[] arrA, arrB;
             arrA = new char[A.length()];
             arrB = new char[B.length()];
-            for (int i = 0;i<A.length();i++){
-                //Copy the char array for each from it's corresponding string
+            for (int i = 0; i < A.length(); i++) {
+                //Copy the char array for each from its corresponding string
                 arrA[i] = A.charAt(i);
                 arrB[i] = B.charAt(i);
             }
 
             //Now that the char arrays are created, the procedure to figure out whether they are anagrams should be this
-            //for each (char i : arrA){
-            //boolean found = false
-            //  for each (char j : arrB){
-            //      if !found
-            //      if i == j,
-            //          i = ''
-            //          found = true
-            //      if !found {anagram = false;}
-            //the result should be that arrA will be totally null when arrB is finished
-
+            for (char i : arrA){
+                boolean found = false;
+                for (char j : arrB) {
+                    if (!found) {
+                        if (i == j) {
+                            found = true;
+                            break;
+                        }
+                    }
+                }
+                if (!found){
+                    anagram = false;
+                }
+            }
         } else {
             anagram = false;
-        }
+            }
 
         //return a boolean flag anagram, //true if anagram, false if not anagram
         return anagram;

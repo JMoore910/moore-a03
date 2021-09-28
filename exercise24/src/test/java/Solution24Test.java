@@ -1,16 +1,15 @@
 import org.junit.jupiter.api.Test;
+import java.util.Scanner;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution24Test {
     @Test
-    public void test_etcetcetcCHANGETHISASNEEDED() {
+    public void test_string_comparison() {
         Solution24 sol24 = new Solution24();
-        //Point p1 = new Point(0,0);
-        //Point p2 = new Point(1,0);
-
-        //double actual_distance = sol24.getDistance(p1,p2);
-        //double expected_distance = 1;
-        assertEquals(0,0, 0.000001);
+        String expected_string = "true";
+        String actual_string = "true";
+        assertEquals(expected_string.length(),actual_string.length());
+        assertTrue(sol24.stringCompare(actual_string,expected_string));
     }
 }
