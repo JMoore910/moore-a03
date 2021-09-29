@@ -1,21 +1,27 @@
 import static java.lang.Math.*;
 
 public class PaymentCalculator {
-    //create a constructor
     //Variables should be private for PaymentCalculator's use ONLY
-    //Create getters and setters for user change variables in a rational way
+    //Overload the constructor to immediately set variables
     //variables:
-    //int numMonths
-    //double dailyRate
-    //double balance
-    //double monthlyPayment
+    double numMonths;
+    double dailyRate;
+    double balance;
+    double monthlyPayment;
 
-    public static int calculateMonthsUntilPaidOff(){
+    PaymentCalculator(double dailyRate, double balance, double monthlyPayment){
+        this.balance = balance;
+        this.dailyRate = dailyRate;
+        this.monthlyPayment = monthlyPayment;
+    }
+
+    public double calculateMonthsUntilPaidOff(){
         //method uses class variables
+        //create a constructor for a PaymentCalculator Object
 
-        //numMonths = -(1/30) * log(1 + balance/monthlyPayment * (1 - pow(1 + dailyRate,30)) / log(1 + dailyRate);
+        System.out.println(balance + "" + dailyRate + "" + monthlyPayment);
+        numMonths = -(1.0/30.0) * log(1 + balance/monthlyPayment * (1 - pow(1 + dailyRate,30.0)) / log(1 + dailyRate));
 
-
-        return 0;
+        return numMonths;
     }
 }
