@@ -25,39 +25,53 @@ package baseline;
             to output a name picked from the list as a winner
  */
 
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Random;
+
+
 public class Solution35 {
-    //  Create method: public static ArrayList<String> inputList(ArrayList<String> nameList)
-    //      String name;
-    //      for (int i = 0; i < 6; i ++)
-    //          prompt for user to input a name
-    //          print: Enter a name:
-    //          name = input.nextLine();
-    //          if (!name.equals(""))
-    //              name is not blank, add it
-    //              list.add(name);
-    //      return list;
+    //Make a public static final Scanner
+    public static final Scanner input = new Scanner(System.in);
 
+    public static ArrayList<String> inputList(ArrayList<String> nameList) {
+        String name;
+        for (int i = 0; i < 6; i ++) {
+            //  prompt for user to input a name
+            System.out.printf("Enter a name: ");
+            name = input.nextLine();
+            if (!name.equals("")) {
+                //  name is not blank, add it
+                nameList.add(name);
+            }
+        }
+        return nameList;
+    }
 
-    //  Create method: public static int generateRandom()
-    //      Use java.util.Random;
-    //      Random rand = new Random()
-    //      return rand(6)
+    public static int generateRandom() {
+        //      Use java.util.Random;
+        Random rand = new Random();
+        return rand.nextInt(6);
+    }
 
+    public static String pickWinner(ArrayList<String> nameList, int randNum) {
+        String winner;
+        if (nameList.size() == 0) {
+            winner = "Nobody because you failed to enter any names";
+        } else {
+            winner = nameList.get(randNum);
+        }
 
-    //  Create method: public static void pickWinner(ArrayList<String> nameList, int randNum)
-    //      if the array list is empty,
-    //          winner = Nobody because you failed to enter any names
-    //      else
-    //          String winner = nameList.get(randNum)
-    //      print: "The winner is... " + winner + "!!!"
-
+        System.out.println("The winner is... " + winner + "!!!");
+        return winner;
+    }
 
     public static void main(String[] args) {
-        //  ArrayList<String> nameList = new ArrayList<String>();
+        ArrayList<String> nameList = new ArrayList<String>();
         //  pass the array list into inputList to get input and fill it with names
-        //  nameList = inputList(nameList)
-        //  int randNum = generateRandom();
+        nameList = inputList(nameList);
+        int randNum = generateRandom();
         //  use random number to pick a name randomly from the list
-        //  pickWinner(nameList, randNum);
+        pickWinner(nameList, randNum);
     }
 }
