@@ -1,0 +1,37 @@
+
+@
+java:S3457)"%String contains no format specifiers.(ñÏÑÊøÿÿÿÿ
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(ñÏÑÊøÿÿÿÿ
+@
+java:S3457,"%String contains no format specifiers.(ùÂî«üÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(ùÂî«üÿÿÿÿ
+@
+java:S3457/"%String contains no format specifiers.(„Õœ³üÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(„Õœ³üÿÿÿÿ
+\
+java:S11267"AReplace this if-then-else statement by a single return statement.(ãŸ‘¾şÿÿÿÿ
+G
+java:S1481A",Remove this unused "randNum" local variable.(ú¹¹½ùÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(ÈÔ‚üÿÿÿÿ
+;
+java:S3457D"%String contains no format specifiers.(³¨®ä
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(³¨®ä
+;
+java:S3457K"%String contains no format specifiers.(ÌãÚ¦
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(ÌãÚ¦
+9
+java:S2119U"Save and re-use this "Random".(šŸ«íøÿÿÿÿ
+@
+java:S3457b"%String contains no format specifiers.(±ìß¸üÿÿÿÿ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(±ìß¸üÿÿÿÿ
+;
+java:S3457i"%String contains no format specifiers.(ƒœ£á
+N	java:S106i"9Replace this use of System.out or System.err by a logger.(ƒœ£á
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(“şÿÿÿÿ
+@
+java:S3457s"%String contains no format specifiers.(Ø¸ò°şÿÿÿÿ
+S	java:S106s"9Replace this use of System.out or System.err by a logger.(Ø¸ò°şÿÿÿÿ
+S	java:S106}"9Replace this use of System.out or System.err by a logger.(œÉ£Ùÿÿÿÿÿ
+[	java:S106‰"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ8ç°ÉÀÃ/
+u
+java:S1488X"_Immediately return this expression instead of assigning it to the temporary variable "randNum".(¿®ÃÚ
