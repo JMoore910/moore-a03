@@ -1,0 +1,20 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(ßîôÙøÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(«’şô
+:
+java:S1659"$Declare "target" on a separate line.(İÚº¨
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÀúêÙşÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ğœ‹Ùÿÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(¹ ¿®üÿÿÿÿ
+Q	java:S125&"<This block of commented-out lines of code should be removed.(ı¶í÷
+W
+java:S1126."AReplace this if-then-else statement by a single return statement.(êøš¥
+9
+java:S16597"#Declare "ageIn" on a separate line.(ç¹Ñğ
+B
+java:S3457?"%String contains no format specifiers.(µ¯¶‹8¥¸üºÃ/
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(µ¯¶‹
+B
+java:S3457A"%String contains no format specifiers.(òº‘¢8°ÑüºÃ/
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(òº‘¢
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(¦ĞÖÛøÿÿÿÿ
