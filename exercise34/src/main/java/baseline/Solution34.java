@@ -14,35 +14,41 @@ package baseline;
     Create Method: public static void printNameList(LinkedList<String> nameList)
  */
 
+import java.util.LinkedList;
+import java.util.Scanner;
+
 public class Solution34 {
-    //  Create method: public static LinkedList<String> createLinkedList()
-    //      nameList.add("John Smith");
-    //      nameList.add("Jackie Jackson");
-    //      nameList.add("Chris Jones");
-    //      nameList.add("Amanda Cullen");
-    //      nameList.add("Jeremy Goodwin");
-    //      return nameList;
+    public static LinkedList<String> createLinkedList(LinkedList<String> nameList) {
+        nameList.add("John Smith");
+        nameList.add("Jackie Jackson");
+        nameList.add("Chris Jones");
+        nameList.add("Amanda Cullen");
+        nameList.add("Jeremy Goodwin");
+        return nameList;
+    }
 
+    public static LinkedList<String> removeNode(LinkedList<String> nameList, String name) {
+        nameList.remove(name);
+        return nameList;
+    }
 
-    //  Create method: public static LinkedList<String> removeNode(LinkedList<String> nameList, String name)
-    //      nameList.remove(name);
-    //      return nameList;
-
-
-    //  Create method: public static void printNameList(LinkedList<String> nameList)
-    //  print: "There are " + nameList.size + " employees"
-    //  for (String name : nameList)
-    //      printline: name
+    public static void printNameList(LinkedList<String> nameList) {
+        System.out.printf("\nThere are " + nameList.size() + " employees.\n");
+        for (String name : nameList)
+            System.out.println(name);
+    }
 
 
     public static void main(String[] args) {
-        //  LinkedList<String> nameList = new LinkedList<String>();
-        //  nameList = createLinkedList();
-        //  printNameList(nameList);
+        Scanner input = new Scanner(System.in);
+        LinkedList<String> nameList = new LinkedList<String>();
+        nameList = createLinkedList(nameList);
+        printNameList(nameList);
         //  prompt user to enter an employee name to remove
-        //  print: "Enter an employee name to remove: "
+        System.out.printf("Enter an employee name to remove: ");
         //  receive name as input from user
-        //  removeNode(nameList, name);
-        //  printNameList(nameList);
+        String name = input.nextLine();
+        removeNode(nameList, name);
+        printNameList(nameList);
     }
 }
