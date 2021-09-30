@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Solution27Test" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-09-30T02:34:50" hostname="DESKTOP-2D733RN" time="0.018">
+  <properties/>
+  <testcase name="test_last_name_validation()" classname="Solution27Test" time="0.014"/>
+  <testcase name="test_zip_validation()" classname="Solution27Test" time="0.0"/>
+  <testcase name="test_id_validation()" classname="Solution27Test" time="0.0"/>
+  <testcase name="test_filled_name_validation()" classname="Solution27Test" time="0.001"/>
+  <testcase name="test_first_name_validation()" classname="Solution27Test" time="0.001"/>
+  <testcase name="test_input_validation()" classname="Solution27Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

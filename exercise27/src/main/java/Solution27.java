@@ -18,57 +18,91 @@
     ValidateInput, if no errors occurred, will say so to the user.
  */
 
+import java.util.Scanner;
+import java.lang.Character;
+
 public class Solution27 {
-    //Create Functions:
+    //  Create Functions:
 
 
-    //private String firstNameValidation(String firstName, String OutputString)
-    //  if firstName.length < 2,
-    //      concatenate "The first name must be at least 2 characters long.  \n" to OutputString
-    //  return OutputString
+    public static String firstNameValidation(String firstName, String outputString) {
+        if (firstName.length() < 2) {
+            //  concatenate "The first name must be at least 2 characters long.  \n" to OutputString
+            outputString = outputString.concat("The first name must be at least 2 characters long. \n");
+        }
+        return outputString;
+    }
 
+    public static String lastNameValidation(String lastName, String outputString) {
+        if (lastName.length() < 2) {
+            //  concatenate "The last name must be at least 2 characters long.  \n" to OutputString
+            outputString = outputString.concat("The last name must be at least 2 characters long. \n");
+        }
+        return outputString;
+    }
 
-    //private String lastNameValidation(String lastName, String OutputString)
-    //  if lastName.length < 2,
-    //      concatenate "The last name must be at least 2 characters long.  \n" to OutputString
-    //  return OutputString
+    public static String filledNameValidation(String firstName, String lastName, String outputString) {
+        if ((firstName.equals("")) || (lastName.equals(""))) {
+            if(firstName.equals("")) {
+                //  concatenate "The first name must be filled in.  \n" to OutputString
+                outputString = outputString.concat("The first name must be filled in. \n");
+            }
+            if (lastName.equals("")) {
+                //  concatenate "The last name must be filled in.  \n" to OutputString
+                outputString = outputString.concat("The last name must be filled in.  \n");
+            }
+        }
+        return outputString;
+    }
 
+    public static String zipCodeValidation(String zip, String outputString) {
+        if ((!zip.matches("[0-9]+")) || (zip.length() != 5)) {
+            //  concatenate "The zipcode must be a 5 digit number. \n" to OutputString
+            outputString = outputString.concat("The zipcode must be a 5 digit number. \n");
+        }
+        return outputString;
+    }
 
-    //private String filledNameValidation(String firstName, String lastName, String OutputString)
-    //  if firstName.equals("") or lastName.equals(""),
-    //      if firstName.equals(""),
-    //          concatenate "The first name must be filled in.  \n" to OutputString
-    //      if lastName.equals(""),
-    //          concatenate "The last name must be filled in.  \n" to OutputString
-    //  return OutputString
+    public static String idFormatValidation(String id, String outputString) {
+        if ((id.length() != 7) || (!Character.isLetter(id.charAt(0))) || (!Character.isLetter(id.charAt(1))) ||
+                (!Character.isDigit(id.charAt(3))) || (!Character.isDigit(id.charAt(4))) ||
+                (!Character.isDigit(id.charAt(5))) || (!Character.isDigit(id.charAt(6))) || !(id.charAt(2) == '-')) {
+            //  concatenate "The employee ID must be in the format of AA-1234. \n"  to OutputString
+            outputString = outputString.concat("The employee ID must be in the format of AA-1234. \n");
+        }
+        return outputString;
+    }
 
-
-    //private String zipCodeValidation(String zip, String OutputString)
-    //  if zip is not all digits or zip.length != 5,       //Syntax: !zip.matches("[0-9]+")
-    //      concatenate "The zipcode must be a 5 digit number. \n" to OutputString
-    //  return OutputString
-
-
-    //private String idFormatValidation(String id, String OutputString)
-    //  if the id is not 7 chars long, or the first two chars aren't digits, or the last four chars aren't all uCase letters, or the third char is not a hyphen,
-    //      Syntax:if id.length != 7 or !id.substring(0,1).matches("[0-9]+") or !id.substring(3,6).matches("[A-Z]+") or !id.charAt(2).equals('-')
-    //      concatenate "The employee ID must be in the format of AA-1234. \n"  to OutputString
-    //  return OutputString
-
-
-    //public void validateInput(String firstName, String lastName, String zip, String iD)
-    //  String OutputString;
-    //  OutputString = firstNameValidation(firstName, OutputString);
-    //  OutputString = lastNameValidation(lastName, OutputString);
-    //  OutputString = filledNameValidation(firstName, OutputString);
-    //  OutputString = zipCodeValidation(zip, OutputString);
-    //  OutputString = idFormatValidation(id, OutputString);
-    //  if OutputString.equals(""), concatenate "There were no errors. \n" to OutputString
-    //  print OutputString
+    public static String validateInput(String firstName, String lastName, String zip, String id) {
+        String outputString = new String("");
+        outputString = firstNameValidation(firstName, outputString);
+        outputString = lastNameValidation(lastName, outputString);
+        outputString = filledNameValidation(firstName, lastName, outputString);
+        outputString = zipCodeValidation(zip, outputString);
+        outputString = idFormatValidation(id, outputString);
+        if (outputString.equals("")) {
+            //  concatenate "There were no errors. \n" to OutputString
+            outputString = outputString.concat("There were no errors. \n");
+        }
+        return outputString;
+    }
 
     public static void main(String[] args) {
         //  prompt for user to input firstName, lastName, zip, and employee ID
         //  Get user input for firstName, lastName, zip, and employee ID
+        Scanner input = new Scanner(System.in);
+        String firstName, lastName, zip, id;
+        System.out.printf("Enter the first name: ");
+        firstName = input.nextLine();
+        System.out.printf("Enter the last name: ");
+        lastName = input.nextLine();
+        System.out.printf("Enter the ZIP code: ");
+        zip = input.nextLine();
+        System.out.printf("Enter the employee ID: ");
+        id = input.nextLine();
         //  pass the input values into validateInput, and let the functions do the rest
+        String output = validateInput(firstName,lastName,zip,id);
+        //print OutputString as a single output statement
+        System.out.println(output);
     }
 }
