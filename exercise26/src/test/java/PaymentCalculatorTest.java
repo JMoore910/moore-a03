@@ -1,3 +1,4 @@
+import baseline.PaymentCalculator;
 import org.junit.jupiter.api.Test;
 
 import static java.lang.Math.log10;

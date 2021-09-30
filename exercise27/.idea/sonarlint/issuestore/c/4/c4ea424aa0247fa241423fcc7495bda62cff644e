@@ -1,0 +1,22 @@
+
+l
+java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ùàíşüÿÿÿÿ
+D
+java:S1940E")Use the opposite operator ("!=") instead.(²“ôıÿÿÿÿ
+;
+java:S2129M" Remove this "String" constructor(ã²øºúÿÿÿÿ
+`
+java:S1659^"EDeclare "lastName" and all following declarations on a separate line.(ù”Ì€ùÿÿÿÿ
+;
+java:S3457_"%String contains no format specifiers.(³›­
+N	java:S106_"9Replace this use of System.out or System.err by a logger.(³›­
+;
+java:S3457a"%String contains no format specifiers.(õäÏõ
+N	java:S106a"9Replace this use of System.out or System.err by a logger.(õäÏõ
+@
+java:S3457c"%String contains no format specifiers.(Ì‚Ÿîüÿÿÿÿ
+S	java:S106c"9Replace this use of System.out or System.err by a logger.(Ì‚Ÿîüÿÿÿÿ
+@
+java:S3457e"%String contains no format specifiers.(ºÑ¬úÿÿÿÿ
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(ºÑ¬úÿÿÿÿ
+N	java:S106j"9Replace this use of System.out or System.err by a logger.(¢àóÄ
