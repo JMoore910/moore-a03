@@ -13,19 +13,23 @@ package baseline;
 public class Solution30 {
 
     //  Create Method: public void multiplyTable()
-    //      int i, j
-    //      for i from 1 to 12
-    //          for j from 1 to 12
-    //              if i*j < 10
-    //                  print 4spaces + i*j
-    //              else if i*j < 100
-    //                  print 3spaces + i*j
-    //              else
-    //                  print 2spaces + i*j
-    //          print \n
-
+    public static void multiplyTable(){
+        int i, j;
+        for (i = 1 ;i <= 12; i++) {
+            for (j = 1 ;j <= 12; j++) {
+                if (i*j < 10)
+                    System.out.printf("    " + i*j);
+                else if (i*j < 100)
+                    System.out.printf("   " + i*j);
+                else
+                    System.out.printf("  " + i*j);
+            }
+            System.out.println("");
+        }
+    }
 
     public static void main(String[] args) {
+        multiplyTable();
         //No input is needed in any form.
         //multiplyTable() is called and is a simple output function
         //No JUnit tests are required as the only function used is an output function
