@@ -1,0 +1,22 @@
+
+V
+java:S3457$"AFormat specifiers should be used instead of string concatenation.(õ¼Ïy
+M	java:S106$"9Replace this use of System.out or System.err by a logger.(õ¼Ïy
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(«‹Îõ
+:
+java:S34570"%String contains no format specifiers.(é«½4
+M	java:S1060"9Replace this use of System.out or System.err by a logger.(é«½4
+o
+java:S2293,"YReplace the type specification in this constructor call with the diamond operator ("<>").(âë–Ñ
+‡
+java:S1319"qThe return type of this method should be an interface such as "List" rather than the implementation "LinkedList".(®¦ƒÆ
+
+java:S1319"iThe type of "nameList" should be an interface such as "List" rather than the implementation "LinkedList".(®¦ƒÆ
+‡
+java:S1319"qThe return type of this method should be an interface such as "List" rather than the implementation "LinkedList".(ê«íî
+
+java:S1319"iThe type of "nameList" should be an interface such as "List" rather than the implementation "LinkedList".(ê«íî
+„
+java:S1319#"iThe type of "nameList" should be an interface such as "List" rather than the implementation "LinkedList".(³ïÛîûÿÿÿÿ
+|
+java:S4165-"fRemove this useless assignment; "nameList" already holds the assigned value along all execution paths.(èùŸü
