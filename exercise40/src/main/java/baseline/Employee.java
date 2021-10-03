@@ -1,36 +1,49 @@
 package baseline;
 
+/*
+ *  UCF COP3330 Fall 2021 Assignment 3 Solutions
+ *  Copyright 2021 Sean Moore
+ */
+
+
 public class Employee {
-    //  private firstName;
-    //  private lastName;
-    //  private occupation;
-    //  private termination;
+
+    private String firstName;
+    private String lastName;
+    private String occupation;
+    private String termination;
 
     //  Constructor for if employee has been terminated
-    //  public Employee(String firstName,String lastName,String occupation String termination)
-    //      this.firstName = firstName
-    //      this.lastName = lastName
-    //      this.occupation = occupation
-    //      this.termination = termination
+    public Employee(String firstName,String lastName,String occupation,String termination) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.occupation = occupation;
+        this.termination = termination;
+    }
 
     //  Constructor for if employee has not been terminated
-    //  public Employee("","","")
-    //      this.firstName = firstName
-    //      this.lastName = lastName
-    //      this.occupation = occupation
-    //      this.termination = " "
+    public Employee(String firstName,String lastName,String occupation) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.occupation = occupation;
+        this.termination = " ";
+    }
 
-    //  Create method: public getFirstName()
-    //      return firstName
+    public String getFirstName() {
+        return firstName;
+    }
 
-    //  Create method: public getLastName()
-    //      return lastName
+    public String getLastName() {
+        return lastName;
+    }
 
-    //  Create method: public getOccupation()
-    //      return occupation
+    public String getOccupation() {
+        return occupation;
+    }
 
-    //  Create method: public getTermination()
-    //      return termination
+    public String getTermination() {
+        return termination;
+    }
 }
 
 
