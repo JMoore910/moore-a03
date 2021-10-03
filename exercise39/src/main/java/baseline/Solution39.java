@@ -21,7 +21,7 @@ package baseline;
 import java.util.*;
 
 public class Solution39 {
-    public static final String key = "employee";
+    private static final String key = "employee";
 
 
     private static Comparator<HashMap<String, Employee>> compareMaps = new Comparator<>() {
