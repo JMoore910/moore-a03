@@ -1,32 +1,41 @@
-import baseline.Solution29;
+import baseline.Calculator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution29Test {
-    Solution29 sol29 = new Solution29();
+    Calculator testCalc = new Calculator();
 
     @Test
-    public void test_valid_input(){
-        boolean expectedValid, actualValid;
-        expectedValid = false;
-        actualValid = sol29.validateInput("ABC");
-        assertEquals(expectedValid,actualValid);
-        actualValid = sol29.validateInput("0");
-        assertEquals(expectedValid,actualValid);
-        expectedValid = true;
-        actualValid = sol29.validateInput("12");
-        assertEquals(expectedValid,actualValid);
+    void test_valid_input1(){
+        boolean actualValid;
+        actualValid = testCalc.validateInput("ABC");
+        assertFalse(actualValid);
     }
 
     @Test
-    public void test_calculate_return(){
-        int expectedTime, actualTime;
+    void test_valid_input2(){
+        boolean actualValid;
+        actualValid = testCalc.validateInput("0");
+        assertFalse(actualValid);
+    }
+
+
+    @Test
+    void test_calculate_return(){
+        int expectedTime;
+        int actualTime;
         expectedTime = 36;
-        actualTime = sol29.calculateReturn(2);
+        actualTime = testCalc.calculateReturn(2);
         assertEquals(expectedTime,actualTime);
+    }
+
+    @Test
+    void test_calculate_return2(){
+        int expectedTime;
+        int actualTime;
         expectedTime = 15;
-        actualTime = sol29.calculateReturn(5);
+        actualTime = testCalc.calculateReturn(5);
         assertEquals(expectedTime,actualTime);
     }
 }
