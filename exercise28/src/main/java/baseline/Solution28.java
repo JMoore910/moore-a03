@@ -13,23 +13,20 @@ package baseline;/*
 import java.util.Scanner;
 
 public class Solution28 {
-    //  Create method: calculateSum()
-
-    public static int calculateSum(int x, int y) {
-        return x + y;
-    }
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int sum = 0, num;
+        int sum = 0;
+        int num;
+        Calculator addition = new Calculator();
         //enter for loop iterating 5 times
         for (int i=0;i<5;i++){
             //prompt user for integer as input
-            System.out.printf("Enter a number: ");
+            System.out.print("Enter a number: ");
             //Get input as num
             num = input.nextInt();
             //call calculate sum function within loop
-            sum = calculateSum(num, sum);
+            sum = addition.calculateSum(num, sum);
         }
         System.out.println("The total is " + sum + ".");
     }
