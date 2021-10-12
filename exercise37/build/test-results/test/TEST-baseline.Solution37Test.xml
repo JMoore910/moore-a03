@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="baseline.Solution37Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-01T21:42:03" hostname="DESKTOP-2D733RN" time="0.019">
+<testsuite name="baseline.Solution37Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-12T02:18:17" hostname="DESKTOP-2D733RN" time="0.018">
   <properties/>
-  <testcase name="test_input_validation_false()" classname="baseline.Solution37Test" time="0.017"/>
+  <testcase name="test_input_validation_false()" classname="baseline.Solution37Test" time="0.016"/>
   <testcase name="test_input_validation_true()" classname="baseline.Solution37Test" time="0.001"/>
   <system-out><![CDATA[All inputs must be integers. 
 ]]></system-out>
