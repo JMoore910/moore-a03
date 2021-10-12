@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="baseline.Solution31Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-30T15:50:32" hostname="DESKTOP-2D733RN" time="0.019">
+<testsuite name="baseline.Solution31Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-12T01:26:46" hostname="DESKTOP-2D733RN" time="0.021">
   <properties/>
   <testcase name="test_target_calculation()" classname="baseline.Solution31Test" time="0.018"/>
-  <testcase name="test_input_validation()" classname="baseline.Solution31Test" time="0.0"/>
+  <testcase name="test_input_validation1()" classname="baseline.Solution31Test" time="0.001"/>
+  <testcase name="test_input_validation2()" classname="baseline.Solution31Test" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
