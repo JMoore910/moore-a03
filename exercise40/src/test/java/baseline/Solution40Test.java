@@ -7,11 +7,11 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution40Test {
-    Solution40 sol40 = new Solution40();
+    EmployeeLister test = new EmployeeLister();
 
 
     @Test
-    public void test_list_search(){
+    void test_list_search(){
         ArrayList<HashMap<String, Employee>> actual = new ArrayList<>();
         ArrayList<HashMap<String, Employee>> expected = new ArrayList<>();
         HashMap<String, Employee> employeeTest = new HashMap<>();
@@ -21,7 +21,7 @@ class Solution40Test {
         employeeTest = new HashMap<>();
         employeeTest.put("employee", new Employee("xxx","zzz","testbot"));
         actual.add(employeeTest);
-        assertEquals(expected,sol40.searchList("abc",actual));
+        assertEquals(expected,test.searchList("abc",actual));
     }
 
 }

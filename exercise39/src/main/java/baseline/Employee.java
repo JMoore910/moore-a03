@@ -7,10 +7,10 @@ package baseline;
 
 public class Employee {
 
-    private String firstName;
-    private String lastName;
-    private String occupation;
-    private String termination;
+    private final String firstName;
+    private final String lastName;
+    private final String occupation;
+    private final String termination;
 
 
     //  Using overloaded constructors allows for setters to be ignored
