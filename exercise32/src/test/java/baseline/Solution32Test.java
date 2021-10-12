@@ -5,22 +5,31 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class Solution32Test {
-    Solution32 sol32 = new Solution32();
+    GuessingGame testGame = new GuessingGame();
 
     @Test
-    public void test_guess_checker(){
+    void test_guess_checker1() {
         boolean actualCheck;
-        actualCheck = sol32.guessChecker("12",12);
-        assertEquals(true, actualCheck);
-        actualCheck = sol32.guessChecker("150", 200);
-        assertEquals(false, actualCheck);
+        actualCheck = testGame.guessChecker("12", 12);
+        assertTrue(actualCheck);
     }
 
     @Test
-    public void test_difficulty_validation(){
-        boolean actualCheck = sol32.difficultyValidation("3");
-        assertEquals(true, actualCheck);
-        actualCheck = sol32.difficultyValidation("a");
-        assertEquals(false, actualCheck);
+    void test_guess_checker2() {
+        boolean actualCheck;
+        actualCheck = testGame.guessChecker("150", 200);
+        assertFalse(actualCheck);
+    }
+
+    @Test
+    void test_difficulty_validation1() {
+        boolean actualCheck = testGame.difficultyValidation("3");
+        assertTrue(actualCheck);
+    }
+
+    @Test
+    void test_difficulty_validation2() {
+        boolean actualCheck = testGame.difficultyValidation("a");
+        assertFalse(actualCheck);
     }
 }
