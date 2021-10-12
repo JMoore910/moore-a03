@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="baseline.Solution33Test" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-10-12T01:47:04" hostname="DESKTOP-2D733RN" time="0.018">
+  <properties/>
+  <testcase name="test_magic_eight_ball1()" classname="baseline.Solution33Test" time="0.015"/>
+  <testcase name="test_magic_eight_ball2()" classname="baseline.Solution33Test" time="0.0"/>
+  <testcase name="test_magic_eight_ball3()" classname="baseline.Solution33Test" time="0.0"/>
+  <testcase name="test_magic_eight_ball4()" classname="baseline.Solution33Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
