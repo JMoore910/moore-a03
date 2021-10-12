@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Solution25Test" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-10-12T00:33:23" hostname="DESKTOP-2D733RN" time="0.017">
+<testsuite name="Solution25Test" tests="5" skipped="0" failures="0" errors="0" timestamp="2021-10-12T00:50:50" hostname="DESKTOP-2D733RN" time="0.016">
   <properties/>
-  <testcase name="test_password_validation0()" classname="Solution25Test" time="0.013"/>
-  <testcase name="test_password_validation1()" classname="Solution25Test" time="0.001"/>
+  <testcase name="test_password_validation0()" classname="Solution25Test" time="0.012"/>
+  <testcase name="test_password_validation1()" classname="Solution25Test" time="0.0"/>
   <testcase name="test_password_validation2()" classname="Solution25Test" time="0.0"/>
   <testcase name="test_password_validation3()" classname="Solution25Test" time="0.0"/>
-  <testcase name="test_password_validation4()" classname="Solution25Test" time="0.0"/>
+  <testcase name="test_password_validation4()" classname="Solution25Test" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

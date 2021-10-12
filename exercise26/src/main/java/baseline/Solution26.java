@@ -20,12 +20,15 @@ public class Solution26 {
     public static void main(String[] args) {
         //get user input for balance, APR as a percentage, and payPerMonth
         Scanner input = new Scanner(System.in);
-        double bal,apr,pay,numMonths;
-        System.out.printf("What is your balance? ");
+        double bal;
+        double apr;
+        double pay;
+        double numMonths;
+        System.out.print("What is your balance? ");
         bal = input.nextDouble();
-        System.out.printf("What is the APR on the card (as a percent)? ");
+        System.out.print("What is the APR on the card (as a percent)? ");
         apr = input.nextDouble();
-        System.out.printf("What is the monthly payment you can make? ");
+        System.out.print("What is the monthly payment you can make? ");
         pay = input.nextDouble();
 
         //divide APR by 100 first to get it as a decimal,
