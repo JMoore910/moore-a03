@@ -8,7 +8,7 @@ class Solution24Test {
     void test_string_comparison() {
         Compare compTest = new Compare();
         String expected_string = "true";
-        String actual_string = "true";
+        String actual_string = "teur";
         assertEquals(expected_string.length(),actual_string.length());
         assertTrue(compTest.stringCompare(actual_string,expected_string));
     }
