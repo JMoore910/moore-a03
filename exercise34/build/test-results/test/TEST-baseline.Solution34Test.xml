@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="baseline.Solution34Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-09-30T20:19:25" hostname="DESKTOP-2D733RN" time="0.015">
+<testsuite name="baseline.Solution34Test" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-12T01:53:44" hostname="DESKTOP-2D733RN" time="0.014">
   <properties/>
-  <testcase name="test_create_linked_list()" classname="baseline.Solution34Test" time="0.014"/>
+  <testcase name="test_create_linked_list()" classname="baseline.Solution34Test" time="0.013"/>
   <testcase name="test_remove_node()" classname="baseline.Solution34Test" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
